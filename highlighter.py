@@ -6,6 +6,8 @@ import argparse
 import re
 import fitz
 
+# UNUSED ALGORITHMS HERE HAHA
+
 def main():
     # Parsing command line arguments entered by user
     args = parse_args()
