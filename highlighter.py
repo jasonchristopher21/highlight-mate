@@ -76,9 +76,10 @@ def highlight_matching_data(page, matched_values, color):
                 # rect_comp = fitz.Rect(word[0],word[1],word[2],word[3])
                 highlight = page.add_highlight_annot(rect_comp)
                 if color == 1:
-                    highlight.set_colors(colors=fitz.utils.getColor('green'))
+                    print("this set")
+                    highlight.set_colors({"stroke":(0,1,0),"fill":None})
                 elif color == 2:
-                    highlight.set_colors(colors=fitz.utils.getColor({}))
+                    highlight.set_colors({"stroke":(0,1,1),"fill":None})
                 elif color == 3:
                     highlight.set_colors(colors=fitz.utils.getColor('pink'))
                 highlight.update()
